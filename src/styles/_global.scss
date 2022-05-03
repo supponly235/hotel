@@ -1,0 +1,21 @@
+@import './styles-forwarder.scss';
+
+$main-color: #1F2041BF;
+
+.landing-page{
+    background-image: url(../images/landing-page.png);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.font-style{
+    font-family: Mentserrat;
+    color: $main-color;
+    font-family: Montserrat;
+    font-size: 14px;
+    text-decoration: none;
+}

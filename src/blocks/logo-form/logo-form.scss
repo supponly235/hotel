@@ -1,0 +1,18 @@
+.logo-form{
+    &__pic{
+        background-image: url(../images/logo-name.svg);
+        display: flex;
+        width: 40px;
+        height: 40px;
+    }
+    &__name{
+        background-image: url(../images/toxin.svg);
+        display: flex;
+        width: 53px;
+        height: 13px;
+        margin-left: 3.4%;
+    }
+    display: flex;
+    align-items: center;
+    
+}
