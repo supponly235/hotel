@@ -1,9 +1,17 @@
+.header{
+    height: 62px;
+    display: flex;
+    background-color: red;
+}
 .header-menu-list{
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
     &__item{
         display: flex;
         text-decoration: none;
     }
+}
+.header-auth{
+    display: flex;
+    align-items: center;
 }
