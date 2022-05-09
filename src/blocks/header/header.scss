@@ -1,17 +1,71 @@
+$primary-gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
 .header{
-    height: 62px;
+    height: 70px;
     display: flex;
-    background-color: red;
-}
-.header-menu-list{
-    display: flex;
-    list-style-type: none;
-    &__item{
-        display: flex;
-        text-decoration: none;
-    }
-}
-.header-auth{
-    display: flex;
+    background-color: white;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    &-menu{
+        display: flex;
+        width: 50%;
+        align-items: center;
+            &-list{
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+                align-items: center;
+                &__item{
+                    display: flex;
+                    text-decoration: none;
+                    align-items: center;
+                }
+                &__expand-more{
+                    background-image: url(../images/expand_more.svg);
+                    display: flex;
+                    height: 7px;
+                    width: 12px;
+                    margin-left: 8px;
+                    background-repeat: no-repeat;
+                }
+            }
+    }
+    &-auth{
+        display: flex;
+        align-items: center;
+            &__login{
+                font-family: Montserrat-Bold;
+                font-size: 12px;
+                font-weight: 700;
+                height: 34px;
+                width: 87px;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                border: solid 2px transparent;
+                background-image: linear-gradient(white, white), $primary-gradient;
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+                border-radius: 22px;
+                color: #BC9CFF;
+                padding: 0;
+            }
+            &__register{
+                font-family: Montserrat-Bold;
+                font-size: 12px;
+                font-weight: 700;
+                align-self: center;
+                justify-content: center;
+                text-transform: uppercase;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                height: 34px;
+                width: 196px;
+                border-radius: 22px;
+                border: transparent;
+                color: white;
+                margin-left: 19px;
+
+            }
+        }    
 }

@@ -1,18 +1,20 @@
 header.header
   .centering-wrapper
     include ../logo-form/_logo-form
-    nav.header-nav
+    nav.header-menu
       ul.header-menu-list 
         li.header-menu-list__item
-          a.font-style(href="#") О нас
+          a.header-menu-list__link(href="#") О нас
         li.header-menu-list__item
-          a.font-style(href="#") Услуги
+          a.header-menu-list__link(href="#") Услуги
+          span.header-menu-list__expand-more 
         li.header-menu-list__item
-          a.font-style(href="#") Вакансии
+          a.header-menu-list__link(href="#") Вакансии
         li.header-menu-list__item
-          a.font-style(href="#") Новости
+          a.header-menu-list__link(href="#") Новости
         li.header-menu-list__item
-          a.font-style(href="#") Соглашения
+          a.header-menu-list__link(href="#") Соглашения
+          span.header-menu-list__expand-more 
     .header-auth
       button.header-auth__login Войти
-      button.header-auth__regster Зарегистрироваться
+      button.header-auth__register Зарегистрироваться
