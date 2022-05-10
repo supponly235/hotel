@@ -4,16 +4,7 @@ html(lang='ru')
   body
       include blocks/header/_header
       .landing-page
-      .room-selection
-        .room-selection__info Найдём номера <p> под ваше пожелания
-        .room-selection-list
-          .room-selection-list-arrival Прибытие
-            input.room-selection-list-arrival__form(type="ДД.ММ.ГГГГ")
-          .room-selection-list__departure Выезд
-            input.room-selection-list-departure__form(type="ДД.ММ.ГГГГ")
-          .room-selection-list__item Гости
-            input.room-selection-list__quests(type="Сколько гостей")
-        button.room-selecton__button Подобрать номер
+        include blocks/room-selection/_room-selection
       footer
         .centering-wrapper
           footer-logo-menu

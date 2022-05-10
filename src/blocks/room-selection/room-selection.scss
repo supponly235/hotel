@@ -1,0 +1,100 @@
+.room-selection{
+    display: flex;
+    margin: 9.7% 9.7%;
+    height: 374px;
+    width: 380px;
+    border-radius: 4px;
+    background: white;
+    &__wrapper{
+        padding: 10.5% 0% 5% 8.1%;
+        display: flex;  
+        box-sizing: border-box;
+        width: inherit;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    &__info{
+        font-family: Montserrat-Bold;
+        font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 7%;
+        width: 80%;
+    }
+    &-list{
+        flex-wrap: wrap;
+        display: flex;
+        &__arrival{
+            font-family: Montserrat-Bold;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-right: 5.7%;
+        }
+        &__form{
+            display: flex;
+            width: 144px;
+            height: 40px;
+            margin-top: 4%;
+            border: 1px solid #1F204140;
+            border-radius: 4px;
+            align-items: center;
+            &::placeholder{
+                font-family: Montserrat-Regular;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                padding-left: 1%;
+
+                
+            }
+        }
+        &__departure{
+            font-family: Montserrat-Bold;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 6.6%;
+        }
+        &__quests{
+            font-family: Montserrat-Bold;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &__quests-form{
+            display: flex;
+            width: 314px;
+            height: 40px;
+            border: 1px solid #1F204140;
+            border-radius: 4px;
+            margin: 1.9% 0% 9.5% 0%;
+        }
+    }
+    &__button{
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-family: Montserrat-Bold;
+        font-size: 12px;
+        font-weight: 700;
+        justify-content: center;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        height: 44px;
+        width: 320px;
+        border-radius: 22px;
+        border: transparent;
+        color: white;
+        padding-left: 5%;
+    }
+    &__arrow_forward
+        {
+            display: flex;
+            background-repeat: no-repeat;
+            background-image: url(../images/arrow_forward.svg);
+            width: 17px;
+            height: 17px;
+            position: relative;
+            left: 22%;
+        }
+}

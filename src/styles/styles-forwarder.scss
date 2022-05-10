@@ -1,3 +1,6 @@
+@forward 'reset.css';
+@forward '/src/styles/fonts';
 @forward '../blocks/logo-form/logo-form.scss';
 @forward '../blocks/wrapper/centering-wrapper.scss';
-@forward '../blocks/header/header.scss'
+@forward '../blocks/header/header.scss';
+@forward '../blocks/room-selection/room-selection.scss';

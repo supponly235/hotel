@@ -9,13 +9,16 @@ $primary-gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     z-index: 1;
     &-menu{
         display: flex;
-        width: 50%;
         align-items: center;
+        width: 63%;
+        margin-right: 1%;
+        justify-content: flex-end;
             &-list{
                 display: flex;
                 list-style-type: none;
                 justify-content: space-around;
                 align-items: center;
+                width: inherit;
                 &__item{
                     display: flex;
                     text-decoration: none;
