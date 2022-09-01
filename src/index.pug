@@ -2,37 +2,7 @@ doctype html
 html(lang='ru')
   include blocks/head/_head
   body
-      include blocks/header/_header
-      .landing-page
-        include blocks/room-selection/_room-selection
-      footer
-        .centering-wrapper
-          footer-logo-menu
-            include blocks/logo-form/_logo-form
-            footer-info__item Бронирование номеров  в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"
-          ul.footer-nav-list Навигация  
-            li.footer-nav-list__item
-              a(href="#") О нас
-            li.footer-nav-list__item  
-              a(href="#") Новости
-            li.footer-nav-list__item
-              a(href="#") Служба поддержки
-            li.footer-nav-list__item
-              a(href="#") Услуги
-          ul.footer-about-list О нас
-            li.footer-about-list__item О сервисе
-            li.footer-about-list__item Наша компанда
-            li.footer-about-list__item Вакансии
-            li.footer-about-list__item Инвесторы
-          ul.footer-support-list Служба поддержки
-            li.footer-support-list__item Соглашения
-            li.footer-support-list__item Сообщество
-            li.footer-support-list__item Связь с нами
-          ul.footer-subscription_list Подписка
-            li.footer-subscription-list__item Получайте специальные предложения и носоти сервиса
-            li.footer-subscription-list__item input(type="Email")
-          .under-footer Copyright © 2018 Toxin отель. Все права защищены.
-            ul.under-footer-social-list
-              li.under-footer-social-list__item 
-              li.under-footer-social-list__item 
-              li.under-footer-social-list__item 
+    include blocks/header/_header
+    .landing-page
+      include blocks/room-selection/_room-selection
+    include blocks/footer/_footer

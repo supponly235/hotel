@@ -1,0 +1,44 @@
+.footer{
+    margin-top: 94px;
+    &-logo{
+        width: 23.2%;
+        margin-right: 20px;
+        padding-top: 7px;
+        &__item{
+            padding-bottom: 18px;
+        }
+        &__info{
+            font-family: Montserrat-Regular;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    &-list{
+        &-nav{
+            line-height: 38px;
+        }
+        &-servise{
+        }
+        &-support{
+        }
+        &-subscription{
+        }
+        display: flex;
+        flex-direction: column;
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+            &__item{
+                
+            }
+            &__item:first-child{
+                font-family: Montserrat-Bold;
+                font-size: 12px;
+                text-transform: uppercase;
+            }   
+            &__link{
+                text-decoration: none;
+                color: #1F204180;
+            }
+}
+    
+}
