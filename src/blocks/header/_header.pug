@@ -6,15 +6,17 @@ header.header
         li.header-menu-list__item
           a.header-menu-list__link(href="#") О нас
         li.header-menu-list__item
-          a.header-menu-list__link(href="#") Услуги
-          span.header-menu-list__expand-more 
+          select.header-menu-list__expand-more(name="Услуги") 
+            option(value="Услуги") 
+              a.header-menu-list__link(href="#") Услуги
         li.header-menu-list__item
           a.header-menu-list__link(href="#") Вакансии
         li.header-menu-list__item
           a.header-menu-list__link(href="#") Новости
         li.header-menu-list__item
-          a.header-menu-list__link(href="#") Соглашения
-          span.header-menu-list__expand-more 
+          select.header-menu-list__expand-more(name="Соглашения") 
+            option(value="Соглашения") 
+              a.header-menu-list__link(href="#") Соглашения
     .header-auth
       button.header-auth__login Войти
       button.header-auth__register Зарегистрироваться

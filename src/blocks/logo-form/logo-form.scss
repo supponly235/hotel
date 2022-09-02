@@ -1,18 +1,20 @@
 .logo-form{
     &__pic{
+        margin-left: 1px;
         background-image: url(../images/logo-name.svg);
         display: flex;
         width: 40px;
         height: 40px;
-        margin-right: 12px;
+        margin-right: 12.23px;
         background-repeat: no-repeat;
     }
     &__name{
         background-image: url(../images/toxin.svg);
         display: flex;
-        width: 54px;
-        height: 13px;
+        width: 53.19px;
+        height: 12.95px;
         background-repeat: no-repeat;
+        padding-bottom: 1px;
     }
     display: flex;
     align-items: center;
