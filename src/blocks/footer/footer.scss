@@ -1,9 +1,9 @@
 .footer{
-    margin-top: 94px;
+    margin-top: 93px;
     &-logo{
-        width: 23.2%;
+        width: 24.2%;
         margin-right: 20px;
-        padding-top: 7px;
+        padding-top: 6px;
         &__item{
             padding-bottom: 18px;
         }
@@ -15,18 +15,45 @@
     }
     &-list{
         &-nav{
-            line-height: 38px;
+            margin-right: 4.95%;
         }
         &-servise{
+            margin-right: 8%;
         }
         &-support{
+            margin-right: 4.5%;
         }
         &-subscription{
+            width: 22%;
+            &__item{
+                padding-bottom: 6px;
+                font-family: Montserrat-Bold;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            &__input{
+                height: 40px;
+                width: 254px;
+                display: flex;
+                border: 1px solid #1F204140;
+                border-radius: 4px;
+                &::placeholder{
+                    font-family: Montserrat-Regular;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding-left: 4%;
+                }
+            }
+            &__info{
+                line-height: 24px;
+                padding-bottom: 23px;
+            }
         }
         display: flex;
         flex-direction: column;
         font-family: Montserrat-Regular;
         font-size: 14px;
+        line-height: 38px;
             &__item{
                 
             }
@@ -40,5 +67,7 @@
                 color: #1F204180;
             }
 }
-    
+    &-under{
+    }
+
 }
