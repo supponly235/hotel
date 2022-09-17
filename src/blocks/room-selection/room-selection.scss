@@ -86,12 +86,11 @@
         }  
     }
     &__button{
+        position: relative;
         display: flex;
         align-items: center;
-        position: relative;
         font-family: Montserrat-Bold;
         font-size: 12px;
-        font-weight: 700;
         justify-content: center;
         text-transform: uppercase;
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -100,15 +99,14 @@
         border-radius: 22px;
         border: transparent;
         color: white;
-        padding-left: 5%;
-    }
-    &__arrow_forward{
-            display: flex;
-            background-repeat: no-repeat;
-            background-image: url(../images/arrow_forward.svg);
-            width: 17px;
-            height: 17px;
-            position: relative;
-            left: 22%;
+        &::after{
+            position: absolute;
+            content: url(/src/images/arrow_forward.svg);
+            right: 0;
+            top: 0;
+            margin-top: 13px;
+            margin-right: 13px;
         }
+    }
+
 }
