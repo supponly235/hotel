@@ -1,9 +1,11 @@
+@use "../../styles/vars.scss" as *;
+
 .footer{
     padding: 0 140px;
     margin-top: 93px;
     &-line{
         margin-top: 90px;
-        border-top: 1px solid #1F204140;
+        border-top: 1px solid $primary-color ;
         border-radius: 4px;
     }
     &-top{
@@ -16,7 +18,7 @@
             padding-bottom: 17px;
         }
         &__info{
-            font-family: Montserrat-Regular;
+            font-family: $MainFont;
             font-size: 14px;
             line-height: 24px;
         }
@@ -30,14 +32,14 @@
     &-list{
         display: flex;
         flex-direction: column;
-        font-family: Montserrat-Regular;
+        font-family: $MainFont;
         font-size: 14px;
         line-height: 38px;
         &-subscription{
             width: 30%;
             &__item{
                 padding-bottom: 6px;
-                font-family: Montserrat-Bold;
+                font-family: $SecondFont;
                 font-size: 12px;
                 text-transform: uppercase;
             }
@@ -48,7 +50,7 @@
                     content: url(/src/images/arrow_forward.svg);
                     right: 0;
                     top: 0;
-                    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                    background: $primary-gradient;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
@@ -59,10 +61,10 @@
                 height: 40px;
                 width: 254px;
                 display: flex;
-                border: 1px solid #1F204140;
+                border: 1px solid $primary-color25 ;
                 border-radius: 4px;
                 &::placeholder{
-                    font-family: Montserrat-Regular;
+                    font-family: $MainFont;
                     font-size: 14px;
                     font-weight: 400;
                     padding-left: 4px;
@@ -77,27 +79,26 @@
                 
             }
             &__item:first-child{
-                font-family: Montserrat-Bold;
+                font-family: $SecondFont;
                 font-size: 12px;
                 text-transform: uppercase;
             }   
             &__link{
                 text-decoration: none;
-                color: #1F204180;
+                color: $primary-color;
             }
 }
     &-under{
         margin-top: 90px;
-        border-top: 1px solid rgba(31, 32, 65, 0.2509803922);
+        border-top: 1px solid $primary-color25;
         border-radius: 4px;
         height: 70px;
         display: flex;
         background-color: white;
         align-items: center;
         justify-content: space-between;
-        font-family: Montserrat-Regular;
+        font-family: $MainFont;
         font-size: 14px;
-        background: #FFFFFF;
             &-social{ 
                 margin-right: 2px;
                     &__link{
@@ -108,7 +109,7 @@
 }
 .fa-brands{
     font-size: 25px;  
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: $primary-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

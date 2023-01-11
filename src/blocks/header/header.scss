@@ -52,13 +52,13 @@
                 padding: 0;
             }
             &__register{
-                font-family: Montserrat-Bold;
+                font-family: $SecondFont;
                 font-size: 12px;
                 font-weight: 700;
                 align-self: center;
                 justify-content: center;
                 text-transform: uppercase;
-                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);;
+                background: $primary-gradient;
                 height: 34px;
                 width: 196px;
                 border-radius: 22px;

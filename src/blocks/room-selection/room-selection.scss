@@ -28,7 +28,7 @@
         flex-wrap: wrap;
         display: flex;
         &__arrival{
-            font-family: Montserrat-Bold;
+            font-family: $SecondFont;
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
@@ -49,25 +49,25 @@
         &__form{
             width: 144px;
             height: 40px;
-            border: 1px solid #1F204140;
+            border: 1px solid $primary-color25;
             border-radius: 4px;
             align-items: center;
             &::placeholder{
-                font-family: Montserrat-Regular;
+                font-family: $MainFont;
                 font-size: 14px;
                 font-weight: 400;
                 padding-left: 12px;
             }
         }
         &__departure{
-            font-family: Montserrat-Bold;
+            font-family: $SecondFont;
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
             margin-bottom: 22px;
         }
         &__guests{
-            font-family: Montserrat-Bold;
+            font-family: $SecondFont;
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
@@ -76,11 +76,11 @@
             display: flex;
             width: 314px;
             height: 40px;
-            border: 1px solid #1F204140;
+            border: 1px solid $primary-color25;
             border-radius: 4px;
             margin: 6px 0px 31px 0px;
             &::placeholder{
-                font-family: Montserrat-Regular;
+                font-family: $MainFont;
                 font-size: 14px;
                 font-weight: 400;
                 padding-left: 4%;
@@ -91,11 +91,11 @@
         position: relative;
         display: flex;
         align-items: center;
-        font-family: Montserrat-Bold;
+        font-family: $SecondFont;
         font-size: 12px;
         justify-content: center;
         text-transform: uppercase;
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background: $primary-gradient;
         height: 44px;
         width: 320px;
         border-radius: 22px;

@@ -1,3 +1,5 @@
+@use "../../styles/vars.scss" as *;
+
 .landing-page{
     display: flex;
     background-image: url(../images/landing-page.png);
@@ -8,7 +10,7 @@
     min-height: 830px;
     background-position: 0px -70px;
     &__item{
-        font-family: Montserrat-Regular;
+        font-family: $MainFont;
         font-size: 14px;
         line-height: 24px;
         text-align: right;
