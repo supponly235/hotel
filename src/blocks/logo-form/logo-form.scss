@@ -1,4 +1,6 @@
 .logo-form{
+    display: flex;
+    align-items: center;
     &__pic{
         margin-left: 1px;
         background-image: url(../images/logo-name.svg);
@@ -16,6 +18,4 @@
         background-repeat: no-repeat;
         padding-bottom: 1px;
     }
-    display: flex;
-    align-items: center;
 }

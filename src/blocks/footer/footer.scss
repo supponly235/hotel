@@ -1,18 +1,16 @@
 .footer{
+    padding: 0 140px;
+    margin-top: 93px;
     &-line{
         margin-top: 90px;
         border-top: 1px solid #1F204140;
         border-radius: 4px;
     }
-    margin-top: 93px;
     &-top{
         display: flex;
-        flex-direction: row;
-        width: 100%;
     }
     &-logo{
-        width: 24.2%;
-        margin-right: 20px;
+        width: 24%;
         padding-top: 7px;
         &__item{
             padding-bottom: 17px;
@@ -23,18 +21,20 @@
             line-height: 24px;
         }
     }
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 21px;
+        width: 74%;
+    }
     &-list{
-        &-nav{
-            margin-right: 4.95%;
-        }
-        &-servise{
-            margin-right: 8%;
-        }
-        &-support{
-            margin-right: 4.5%;
-        }
+        display: flex;
+        flex-direction: column;
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        line-height: 38px;
         &-subscription{
-            width: 22%;
+            width: 30%;
             &__item{
                 padding-bottom: 6px;
                 font-family: Montserrat-Bold;
@@ -65,19 +65,14 @@
                     font-family: Montserrat-Regular;
                     font-size: 14px;
                     font-weight: 400;
-                    padding-left: 4%;
+                    padding-left: 4px;
                 }
             }
             &__info{
                 line-height: 24px;
                 padding-bottom: 23px;
             }
-        }
-        display: flex;
-        flex-direction: column;
-        font-family: Montserrat-Regular;
-        font-size: 14px;
-        line-height: 38px;
+            }
             &__item{
                 
             }
@@ -92,6 +87,9 @@
             }
 }
     &-under{
+        margin-top: 90px;
+        border-top: 1px solid rgba(31, 32, 65, 0.2509803922);
+        border-radius: 4px;
         height: 70px;
         display: flex;
         background-color: white;
@@ -109,8 +107,45 @@
     }
 }
 .fa-brands{
-    font-size: 25px;
+    font-size: 25px;  
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+@media (max-width: 1162px) {
+    .footer{
+        padding: 0px 50px;
+    }
+    .footer-list-subscription__input {
+        width: 175px;
+    }
+}
+@media (max-width: 1025px) {
+    .footer{
+        padding: 0 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        &-top{
+            flex-direction: column;
+        }
+        &-logo{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            padding-bottom: 27px;
+            justify-content: center;
+            width: 100%;
+                &__info{
+                    width: 50%;
+                    padding-left: 29px;
+                }
+                &__item{
+                    padding-bottom: 0px;
+                }
+            }
+        &-wrapper{
+            width: 100%;
+        }
+        }
 }

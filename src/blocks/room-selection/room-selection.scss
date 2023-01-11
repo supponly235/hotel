@@ -1,22 +1,24 @@
+@use "../../styles/vars.scss" as *;
+
 .room-selection{
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    margin: 70px 140px;
     display: flex;
-    margin: 9.7% 9.77%;
     height: 372px;
     width: 378px;
     border-radius: 4px;
     background: white;
     &__wrapper{
-        padding: 10.5% 0% 5% 7.6%;
+        padding: 40px 0px 0px 29px;
         display: flex;  
         box-sizing: border-box;
         flex-wrap: wrap;
         flex-direction: column;
     }
     &__info{
-        font-family: Montserrat-Bold;
+        font-family: $SecondFont;
         font-size: 24px;
         line-height: 29px;
         padding-bottom: 24px;
@@ -30,7 +32,7 @@
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
-            margin-right: 5.7%;
+            margin-right: 20px;
         }
         &__form-wrapper{
             position: relative;
@@ -54,7 +56,7 @@
                 font-family: Montserrat-Regular;
                 font-size: 14px;
                 font-weight: 400;
-                padding-left: 12px;  
+                padding-left: 12px;
             }
         }
         &__departure{
@@ -62,7 +64,7 @@
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
-            margin-bottom: 6.6%;
+            margin-bottom: 22px;
         }
         &__guests{
             font-family: Montserrat-Bold;
@@ -76,7 +78,7 @@
             height: 40px;
             border: 1px solid #1F204140;
             border-radius: 4px;
-            margin: 1.9% 0% 9.5% 0%;
+            margin: 6px 0px 31px 0px;
             &::placeholder{
                 font-family: Montserrat-Regular;
                 font-size: 14px;
@@ -98,7 +100,7 @@
         width: 320px;
         border-radius: 22px;
         border: transparent;
-        color: white;
+        color: white; 
         &::after{
             position: absolute;
             content: url(/src/images/arrow_forward.svg);
@@ -109,4 +111,15 @@
         }
     }
 
+}
+
+@media (max-width: 1162px) {
+    .room-selection{
+        margin: 70px 140px;
+    }
+}
+@media (max-width: 769px) {
+    .room-selection{
+        margin: 50px 70px;
+    }
 }
