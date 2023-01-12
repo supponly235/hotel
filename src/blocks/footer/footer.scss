@@ -47,27 +47,28 @@
                 position: relative;
                 &::after{
                     position: absolute;
-                    content: url(/src/images/arrow_forward.svg);
+                    content: url(/src/images/arrow_forward_blue.svg);
                     right: 0;
                     top: 0;
-                    background: $primary-gradient;
+                    margin-right: 11px;
+                    margin-top: 7px;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
-                    text-fill-color: transparent;
                 }
             }
             &__input{
                 height: 40px;
                 width: 254px;
                 display: flex;
-                border: 1px solid $primary-color25 ;
+                border: 1px solid $primary-color25;
                 border-radius: 4px;
                 &::placeholder{
                     font-family: $MainFont;
                     font-size: 14px;
                     font-weight: 400;
                     padding-left: 4px;
+                    color: $primary-color25;
                 }
             }
             &__info{
@@ -85,7 +86,7 @@
             }   
             &__link{
                 text-decoration: none;
-                color: $primary-color;
+                color: $primary-color50;
             }
 }
     &-under{

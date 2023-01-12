@@ -36,7 +36,13 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
         template: "./src/index.pug"
-    })],
+        }),
+        new HtmlWebpackPlugin({
+        template: "./src/UI-kit.pug",
+        filename: "UI-kit.html"
+        }),
+        
+],
     module: {
         rules:[
             {
