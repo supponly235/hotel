@@ -1,6 +1,22 @@
 doctype html
 html(lang='ru')
   include blocks/head/_head
-  body
+  body.body
     .centering-wrapper
-      include blocks/header/_header
+      .styles
+        .ul.styles-colors-menu
+          li.styles-colors-menu__list.styles-colors-menu__shade100
+            span.styles-colors-menu__shade Dark Shade 100%
+              p.styles-colors-menu_colors #1F2041
+          li.styles-colors-menu__list.styles-colors-menu__shade75 Dark Shade 75% #1F2041
+          li.styles-colors-menu__list.styles-colors-menu__shade50 Dark Shade 50 #1F2041
+          li.styles-colors-menu__list.styles-colors-menu__shade25 Dark Shade 25% #1F2041
+          li.styles-colors-menu__list.styles-colors-menu__shade05 Dark Shade 5% #1F2041
+          li.styles-colors-menu__list.styles-colors-menu__button-text Purple #BC9CFF
+          li.styles-colors-menu__list.styles-colors-menu__second Green #6FCF97
+        .ul.styles-type-menu
+          li.styles-type-menu__list.styles-type-menu This one is the sub-section or widget title
+          li.styles-type-menu__list.styles-type-menuNext one is the item title inside widgets
+          li.styles-type-menu__list.styles-type-menu This is a label or CTA text
+          li.styles-type-menu__list.styles-type-menu This is the body text which is used for most of the design, like paragraphs, lists, etc.
+          

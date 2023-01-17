@@ -1,0 +1,57 @@
+@use "/src/styles/vars.scss" as *;
+
+.body{
+    padding: 145px 150px;
+}
+.styles{
+    display: flex;
+    &-colors-menu{
+        font-family: $SecondFont;
+        list-style-type: none;
+        font-size: 19px;
+        width: 30%;
+        margin-right: 100px;
+        &__list{
+            display: flex;
+            margin-bottom: 20px;
+            word-wrap: normal;
+        }
+        &__colors{
+            font-family: $MainFont;
+        }
+        &__list::before {
+            margin-right: 40px;
+            height: 70px;
+            width: 70px;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            content: "";
+        }
+        &__shade100{
+            p{
+                padding-left: 1px;
+            }
+        }
+        &__shade100::before{
+            background-color: $primary-color;
+        }
+        &__shade75::before{
+            background-color: $primary-color75;
+        }
+        &__shade50::before{
+            background-color: $primary-color50;
+        }
+        &__shade25::before{
+            background-color: $primary-color25;
+        }
+        &__shade05::before{
+            background-color: $primary-color05;
+        }
+        &__button-text::before{
+            background-color: $button-text 
+        }
+        &__second::before{
+            background-color: $second-color;;
+        }
+}
+}
