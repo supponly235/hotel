@@ -5,6 +5,7 @@
 }
 .styles{
     display: flex;
+    justify-content: space-between;
     &-colors-menu{
         font-family: $SecondFont;
         list-style-type: none;
@@ -15,22 +16,19 @@
             display: flex;
             margin-bottom: 20px;
             word-wrap: normal;
+            align-items: center;
+            &::before {
+                margin-right: 40px;
+                height: 70px;
+                width: 70px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                content: "";
         }
-        &__colors{
-            font-family: $MainFont;
         }
-        &__list::before {
-            margin-right: 40px;
-            height: 70px;
-            width: 70px;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            content: "";
-        }
-        &__shade100{
-            p{
-                padding-left: 1px;
-            }
+        &__code{
+           font-family: $MainFont;
+           padding-top: 15px;
         }
         &__shade100::before{
             background-color: $primary-color;
@@ -53,5 +51,76 @@
         &__second::before{
             background-color: $second-color;;
         }
+    }
+    &-type-menu{
+        font-family: $SecondFont;
+        color: $primary-color;
+        list-style-type: none;
+        word-wrap: wrap;
+        &__list{
+            text-align: left;
+            display: flex;
+            margin-bottom: 70px;
+            &::before{
+                font-family: $MainFont;
+                display: flex;
+                color: $primary-color25;
+                margin-right: 30px;
+                width: 50px;
+                justify-content: flex-end;
+            }
+        }
+        &__h1{
+            line-height: 29px;
+            font-size: 24px;
+            &::before{
+                content: ('H1');
+            }
+        }
+        &__h2{
+            font-size: 19px;
+            line-height: 23px;
+            &::before{
+                content: ('H2');
+            }
+        }
+        &__h3{
+            font-size: 12px;
+            text-transform: uppercase;
+            &::before{
+                content: ('H3');
+            }
+        }
+        &__body{
+            font-size: 14px;
+            font-family: $MainFont;
+            color: $primary-color75;
+            line-height: 24px;
+            &::before{
+                content: ('Body');
+            }
+
+        }
+    }
 }
+.footer{
+    &-nav{
+        &-menu{
+            display: flex;
+            flex-direction: row;
+            font-family: $MainFont;
+            font-size: 14px;
+            line-height: 38px;
+            justify-content: space-between;
+            font-size: 20px;
+            &__list{
+
+            }
+            &__link{
+                text-decoration: none;
+                color: $primary-color50;
+            }
+        }
+    }
+
 }
