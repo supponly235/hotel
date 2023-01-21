@@ -35,13 +35,16 @@ module.exports = {
             filename: '[name].[contenthash].css'
         }),
         new HtmlWebpackPlugin({
-        template: "./src/index.pug"
+            template: "./src/index.pug"
         }),
         new HtmlWebpackPlugin({
-        template: "./src/UI-kit.pug",
-        filename: "UI-kit.html"
+        template: "./src/pages/ui-kit-colors-type/ui-kit-colors-type.pug",
+            filename: "ui-kit-colors-type.html"
         }),
-        
+        new HtmlWebpackPlugin({
+        template: "./src/pages/ui-kit-cards/ui-kit-cards.pug",
+            filename: "ui-kit-cards.html"
+        }),
 ],
     module: {
         rules:[
