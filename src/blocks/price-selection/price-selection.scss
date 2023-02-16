@@ -1,0 +1,200 @@
+@use "../../styles/vars.scss" as *;
+
+.price-selection{
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: flex;
+    height: 512px;
+    width: 380px;
+    border-radius: 4px;
+    background: white;
+        &__wrapper{
+            padding: 40px 30px;
+        }
+        &-info{
+            display: flex;
+            flex-direction: row;
+            color: $primary-color;
+            font-family: $SecondFont;
+            font-size: 24px;
+            margin-bottom: 20px;
+            align-items: flex-end;
+            &__icon{
+                font-size: 14px;
+            }
+            &__number{
+                font-size: 24px;
+                margin-right: 8px;
+            }
+            &__type{
+                color: $button-text;
+                font-size: 12px;
+                text-transform: uppercase;
+                margin-right: 102px;
+            }
+            &__price{
+                font-size: 14px;
+                color: $primary-color50;
+                margin-right: 5px;
+            }
+            &__days{
+                font-family: $MainFont;
+                color: $primary-color50;
+                font-size: 12px;
+            }
+        }
+    &-list{
+        flex-wrap: wrap;
+        display: flex;
+        margin-bottom: 20px;
+        
+        &__arrival{
+            font-family: $SecondFont;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-right: 20px;
+        }
+        &__form-wrapper{
+            position: relative;
+            margin-top: 6px;
+            &::after{
+                position: absolute;
+                content: url(/src/images/expand_more.svg);
+                right: 0;
+                top: 0;
+                margin-right: 16px;
+                margin-top: 17px;
+            }
+        }
+        &__form{
+            width: 144px;
+            height: 40px;
+            border: 1px solid $primary-color25;
+            border-radius: 4px;
+            align-items: center;
+            &::placeholder{
+                font-family: $MainFont;
+                font-size: 14px;
+                font-weight: 400;
+                padding-left: 12px;
+            }
+        }
+        &__departure{
+            font-family: $SecondFont;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+        &__guests{
+            font-family: $SecondFont;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &__guests-form{
+            display: flex;
+            width: 314px;
+            height: 40px;
+            border: 1px solid $primary-color25;
+            border-radius: 4px;
+            &::placeholder{
+                font-family: $MainFont;
+                font-size: 14px;
+                font-weight: 400;
+                padding-left: 4%;
+            }
+        }
+    }
+    &-count{
+        font-family: $MainFont;
+        font-size: 14px;
+        color: $primary-color75;
+        line-height: 24px;
+        &-day{
+            justify-content: space-between;
+            display: flex;
+            margin-bottom: 10px;
+            &__info{
+                text-align: left;
+            }
+            &__price{
+                text-align: right;
+            }
+        }
+        &-servise{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+                &__info{
+                    text-align: left;
+                }
+                &__price{
+                    text-align: right;
+                }
+                &__price::before{
+                    content: "ⓘ"; 
+                    color: red;
+                }
+        }   
+        &-add-servise{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            &__info{
+                text-align: left;
+            }
+            &__price{
+                text-align: right;
+                }
+            &__price::before{
+                content: "ⓘ"; 
+                color: red;
+        }   
+        }
+    }
+    &-final-price{
+        font-family: $SecondFont;
+        font-size: 19px;
+        color: $primary-color;
+        display: flex;
+        margin-bottom: 20px;
+        &__price{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            &::before{
+                content: '';
+                color: $primary-color25;
+                width: 182px;
+                height: 1px;
+                border: 1px dashed rgba(31, 32, 65, 0.25);
+            }
+        }
+    }
+    &__button{
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-family: $SecondFont;
+        font-size: 12px;
+        justify-content: center;
+        text-transform: uppercase;
+        background: $primary-gradient;
+        height: 44px;
+        width: 320px;
+        border-radius: 22px;
+        border: transparent;
+        color: white; 
+        &::after{
+            position: absolute;
+            content: url(/src/images/arrow_forward.svg);
+            right: 0;
+            top: 0;
+            margin-top: 13px;
+            margin-right: 13px;
+        }
+    }
+}
