@@ -1,0 +1,13 @@
+.ui-kit-cards{
+    padding: 150px 140px;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    &__room-block{
+        margin-right: 40px;
+    }
+    &__price-block{
+        margin-right: 40px;
+    }
+}

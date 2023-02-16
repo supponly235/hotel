@@ -1,11 +1,13 @@
 @forward 'reset.css';
+@forward 'mixins.scss';
 @forward '/src/pages/ui-kit-colors-type/ui-kit-colors-type.scss';
 @forward '/src/pages/ui-kit-cards/ui-kit-cards.scss';
 @forward '/src/styles/fonts';
+@forward '../blocks/calendar/calendar.scss';
 @forward '../blocks/logo-form/logo-form.scss';
 @forward '../blocks/wrapper/centering-wrapper.scss';
 @forward '../blocks/header/header.scss';
 @forward '../blocks/room-selection/room-selection.scss';
+@forward '../blocks/price-selection/price-selection.scss';
 @forward '../blocks/footer/footer.scss';
 @forward '../blocks/landing-page/landing-page.scss';
- 

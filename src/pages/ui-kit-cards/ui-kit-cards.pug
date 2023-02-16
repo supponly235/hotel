@@ -1,5 +1,11 @@
 doctype html
 html(lang='ru')
-    body.body
+    body.ui-kit-cards
         .centering-wrapper
-        include src/blocks/header/_header
+            .ui-kit-cards__wrapper
+                .ui-kit-cards__room-block
+                    include ../../../src/blocks/room-selection/_room-selection
+                .ui-kit-cards__price-block 
+                    include ../../../src/blocks/price-selection/_price-selection
+                .ui-kit-cards__calendar
+                    include ../../../src/blocks/calendar/_calendar
