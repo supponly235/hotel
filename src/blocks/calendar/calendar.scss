@@ -1,0 +1,53 @@
+@use "../../styles/vars.scss" as *;
+
+.calendar{
+    width: 320px;
+    height: 369px;
+    box-shadow: 0px 10px 20px 0px #1F20410D;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background: white; 
+    padding: 20px 20px;
+    &-header{
+        color: $primary-color;
+        font-family: $SecondFont;
+        font-size: 19px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &__prev{
+            content: url(/src/images/arrow_forward_blue.svg);
+            transform: scaleX(-1);
+        }
+        &__next{
+            content: url(/src/images/arrow_forward_blue.svg);
+        }
+    }
+    &-table{
+        line-height: 45px;
+        width: 100%;
+        text-align: center;
+        &-week{
+            font-family: $MainFont;
+            font-size: 12px;
+            font-family: $SecondFont;
+            color: $button-text;
+        }
+        &-days{
+            font-family: $MainFont;
+            color: $primary-color50;
+            &__inactive{
+                color: $primary-color25;
+                
+            }
+        }
+    }
+    &-button-group{
+        display: flex;
+        justify-content: space-between;
+        color: $button-text;
+        text-transform: uppercase;
+        font-family: $SecondFont;
+        font-size: 12px;
+    }
+}
