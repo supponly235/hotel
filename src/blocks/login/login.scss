@@ -1,0 +1,44 @@
+@use "../../styles/vars.scss" as *;
+@use "../../styles/mixins.scss" as *;
+
+.login{
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: flex;
+    height: 314px;
+    width: 320px;
+    border-radius: 4px;
+    background: white;
+    padding: 43px 30px 0px 30px;
+    flex-direction: column;
+    &__info{
+        @include widget-title();
+        margin-bottom: 12px;
+    }
+    &-reg{
+        margin-bottom: 30px;
+        &__form{
+            @include form();
+            margin-top: 11px;
+        }
+        &__button{
+            margin-top: 19px;
+            @include full-big-button();
+        }
+    }
+    &-auth{
+        display: flex;
+        flex-direction: row;
+        &__info{
+            font-family: $MainFont;
+            font-size: 14px;
+            padding-top: 14px;
+            margin-right: 36px;
+        }
+        &__button{
+            margin-left: 21px;
+            @include border-small-button();
+        }
+    }
+}

@@ -12,9 +12,7 @@
     background: white;
     flex-direction: column;
     &__info{
-        font-family: $SecondFont;
-        font-size: 24px;
-        margin-bottom: 12px;
+        @include widget-title();
     }
     &-name-block{
         display: flex;
@@ -112,7 +110,7 @@
             @include full-big-button();
         }
     }
-    &-reg{ 
+    &-auth{ 
         display: flex;
         flex-direction: row;
         &__info{
