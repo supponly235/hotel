@@ -1,0 +1,138 @@
+@use "../../styles/vars.scss" as *;
+@use "../../styles/mixins.scss" as *;
+
+.registration{
+    height: 572px;
+    width: 320px;
+    padding: 43px 30px 30px 29px;
+    display: flex;
+    border: 1px solid #0000001F;
+    box-shadow: 0px 0px 25px 0px #00000033;
+    border-radius: 4px;
+    background: white;
+    flex-direction: column;
+    &__info{
+        font-family: $SecondFont;
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    &-name-block{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        &__form{
+            @include form();
+            margin-top: 11px;
+        }
+    }
+    &-gender{
+        display: flex;
+        margin-bottom: 29px;
+        &-select{
+            position: relative;
+            margin-right: 20px;
+            font-family: $MainFont;
+            font-size: 14px;
+            color: $primary-color75;
+            display: flex;
+                &__input{
+                    -webkit-appearance: none;
+                    appearance: none;
+                    position: absolute; 
+                }
+                &__label{
+                    padding-left: 30px;
+                    color: #444;
+                    cursor: pointer;
+                    padding-top: 2px;
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 18px;
+                        height: 18px;
+                    
+                        border: 1px solid $primary-color25;
+                        background-color: #fff;
+                        border-radius: 50%;
+                    
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                    
+                        transition: border .1s linear;
+                }
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 12px;
+                        height: 12px;
+                        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                        border-radius: 50%;
+                        opacity: 0;
+                        position: absolute;
+                        top: 4px;
+                        left: 4px;
+                        z-index: 2;
+                        transition: opacity .1s linear;
+                    }
+
+            }
+        }
+    }
+    &-date-of-birth{
+        margin-bottom: 22px;
+        &__info{
+            @include label-text();
+            margin-bottom: 7px;
+        }
+        &__form{
+            @include form();
+        }
+    }
+    &-login{
+        display: flex;
+        flex-direction: column;
+        &__info{
+            @include label-text();
+            margin-bottom: 7px;
+        }
+        &__form{
+            @include form();
+            margin-bottom: 10px;
+        }
+    }
+    &-offer{
+        @include toggle();
+        margin-bottom: 23px;
+    }
+    &-pay{
+        margin-bottom: 31px;
+        &__button{ 
+            @include full-big-button();
+        }
+    }
+    &-reg{ 
+        display: flex;
+        flex-direction: row;
+        &__info{
+            font-family: $MainFont;
+            font-size: 14px;
+            padding-top: 14px;
+            margin-right: 36px;
+        }
+        &__button{
+            @include border-small-button();
+        }
+    }
+}
+
+.registration-gender-select__input:checked + .registration-gender-select__label:before {
+    border: 1px solid #BC9CFF
+    
+}
+
+.registration-gender-select__input:checked + .registration-gender-select__label:after {
+    opacity: 1;
+}
+

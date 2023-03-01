@@ -1,0 +1,115 @@
+@use "vars.scss" as *;
+
+@mixin label-text(){
+    font-family: $SecondFont;
+    font-size: 12px;
+    color: $primary-color;
+    text-transform: uppercase;
+}
+@mixin body-text(){
+    font-family: $MainFont;
+    color: $primary-color75;
+    font-size: 14px;
+}
+@mixin form() {
+    display: flex;
+    width: 314px;
+    height: 40px;
+    border: 1px solid $primary-color25;
+    border-radius: 4px;
+    &::placeholder{
+       font-family: $MainFont;
+       font-size: 14px;
+       font-weight: 400;
+       padding-left: 13px;
+       color: $primary-color25;
+    }
+}
+@mixin toggle(){
+    .toggle{
+        position: relative;
+        display: flex;
+        width: 40px;
+        height: 20px;
+        input[type="checkbox"] {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border: 1px solid $primary-color25;
+          border-radius: 10px;
+          transition: 0.5s;
+          &:before {
+            position: absolute;
+            content: "";
+            height: 12px;
+            width: 12px;
+            left: 3px;
+            bottom: 3px;
+            background: $primary-color25;
+            border-radius: 10px;
+            transition: 0.5s;
+          }
+        }
+        input:checked + .slider {
+            border: 1px solid #BC9CFF;
+        }
+        input:checked + .slider:before {
+          transform: translateX(20px);
+          background: #BC9CFF;
+        }
+        
+      }
+    .info{
+        @include body-text();
+        white-space: nowrap;
+        margin-left: 43px;
+        margin-top: 2px;
+    }
+}
+@mixin full-big-button(){
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: $SecondFont;
+  font-size: 12px;
+  justify-content: center;
+  text-transform: uppercase;
+  background: $primary-gradient;
+  height: 44px;
+  width: 320px;
+  border-radius: 22px;
+  border: transparent;
+  color: white; 
+  &::after{
+      position: absolute;
+      content: url(/src/images/arrow_forward.svg);
+      right: 0;
+      top: 0;
+      margin-top: 13px;
+      margin-right: 13px;
+  }
+}
+@mixin border-small-button(){
+  font-family: $SecondFont;
+  font-size: 12px;
+  height: 44px;
+  width: 99px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border: solid 2px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 22px;
+  color: $button-text;
+  padding: 0;
+}

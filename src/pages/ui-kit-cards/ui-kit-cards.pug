@@ -3,9 +3,18 @@ html(lang='ru')
     body.ui-kit-cards
         .centering-wrapper
             .ui-kit-cards__wrapper
-                .ui-kit-cards__room-block
-                    include ../../../src/blocks/room-selection/_room-selection
-                .ui-kit-cards__price-block 
-                    include ../../../src/blocks/price-selection/_price-selection
-                .ui-kit-cards__calendar
-                    include ../../../src/blocks/calendar/_calendar
+                ul.ui-kit-cards-left-list
+                    li.ui-kit-cards-left-list__item 
+                        include ../../../src/blocks/room-selection/_room-selection
+                    li.ui-kit-cards-left-list__item 
+                        include ../../../src/blocks/registration/_registration
+                ul.ui-kit-cards-middle-list
+                    li.ui-kit-cards-middle-list__item 
+                        include ../../../src/blocks/price-selection/_price-selection
+                    li.ui-kit-cards-middle-list__item 
+                ul.ui-kit-cards-right-list
+                    li.ui-kit-cards-right-list__item 
+                        include ../../../src/blocks/calendar/_calendar
+                    li.ui-kit-cards-right-list__item 
+
+                    li.ui-kit-cards-right-list__item 

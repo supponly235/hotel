@@ -10,7 +10,7 @@
     border-radius: 4px;
     background: white;
         &__wrapper{
-            padding: 40px 30px;
+            padding: 44px 30px;
         }
         &-info{
             display: flex;
@@ -18,10 +18,11 @@
             color: $primary-color;
             font-family: $SecondFont;
             font-size: 24px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             align-items: flex-end;
             &__icon{
                 font-size: 14px;
+                margin-right: 3px;
             }
             &__number{
                 font-size: 24px;
@@ -54,7 +55,7 @@
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
-            margin-right: 20px;
+            margin-right: 19px;
         }
         &__form-wrapper{
             position: relative;
@@ -86,7 +87,7 @@
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
-            margin-bottom: 22px;
+            margin-bottom: 23px;
         }
         &__guests{
             font-family: $SecondFont;
@@ -113,6 +114,7 @@
         font-size: 14px;
         color: $primary-color75;
         line-height: 24px;
+        margin-bottom: 46px;
         &-day{
             justify-content: space-between;
             display: flex;
@@ -142,7 +144,6 @@
         &-add-servise{
             display: flex;
             justify-content: space-between;
-            margin-bottom: 30px;
             &__info{
                 text-align: left;
             }
@@ -160,7 +161,7 @@
         font-size: 19px;
         color: $primary-color;
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 23px;
         &__price{
             display: flex;
             flex-direction: row;
