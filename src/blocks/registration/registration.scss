@@ -77,6 +77,13 @@
 
             }
         }
+    .registration-gender-select__input:checked + .registration-gender-select__label:before {
+        border: 1px solid #BC9CFF
+        
+    }
+    .registration-gender-select__input:checked + .registration-gender-select__label:after {
+        opacity: 1;
+    }
     }
     &-date-of-birth{
         margin-bottom: 22px;
@@ -124,13 +131,3 @@
         }
     }
 }
-
-.registration-gender-select__input:checked + .registration-gender-select__label:before {
-    border: 1px solid #BC9CFF
-    
-}
-
-.registration-gender-select__input:checked + .registration-gender-select__label:after {
-    opacity: 1;
-}
-
